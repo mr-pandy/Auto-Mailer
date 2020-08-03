@@ -9,7 +9,7 @@ const routes = require(`${__dirname}/routes.js`);
 // Initialize
 const app = express();
 app.set("view engine", "ejs");
-     app.use(express.static('public'));
+app.use(express.static('public'));
 routes(app)
 
 app.listen(port, () => {
